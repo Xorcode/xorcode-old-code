@@ -188,23 +188,22 @@ namespace :theme do
     # Exclude directories as they'll be recursively created. Exclude meta-data files.
     packaged_theme_files = []
     FileUtils.cd(packaged_theme_path) {
-      Dir.glob("**/*.*") { |f| 
+      Dir.glob("**/*.*") { |f|
         next if ( FileTest.directory?(f) || f =~ /^(manifest|readme|packager)/i )
         packaged_theme_files << f 
       }
     }
-    
+
     # Mirror each file into the framework making sure to prompt if already exists.
     packaged_theme_files.each do |filename|
       file_install_path = File.join(JB::Path.base, filename)
       if File.exist? file_install_path
         if ask("#{file_install_path} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
           next
-        else
-          mkdir_p File.dirname(file_install_path)
-          cp_r File.join(packaged_theme_path, filename), file_install_path
         end
       end
+      mkdir_p File.dirname(file_install_path)
+      cp_r File.join(packaged_theme_path, filename), file_install_path
     end
     
     puts "=> #{name} theme has been installed!"
