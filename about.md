@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "About Xorcode"
+group: navigation
+title: "About Us"
+description: ""
 ---
 {% include JB/setup %}
-
-

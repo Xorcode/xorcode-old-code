@@ -1,5 +1,6 @@
 ---
 layout: page
+group: navigation
 status: publish
 published: true
 title: Support
