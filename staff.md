@@ -10,17 +10,16 @@ author_url: http://xorcode.com/
 wordpress_id: 359
 wordpress_url: http://xorcode.com/?page_id=359
 date: 2011-04-01 14:37:06.000000000 -04:00
-categories: []
-tags: []
 ---
 
 {% include JB/setup %}
 
-<h3>Editor</h3>
-<strong>Torgny Bjers</strong>
-<em>PHP, Perl, Amazon, Zend</em>
+### Editor
+**Torgny Bjers**
+*PHP, Perl, Amazon, Zend*
 torgny.bjers@xorcode.com
-<h3>Contributors</h3>
-<strong>Ben Marvin</strong>
-<em>Android, Mobile</em>
+
+###Contributors
+**Ben Marvin**
+*Android, Mobile*
 ben.marvin@xorcode.com
