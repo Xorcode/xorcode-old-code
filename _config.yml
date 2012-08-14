@@ -76,8 +76,8 @@ JB :
   # Some JB helpers refer to these paths; change them here if needed.
   #
   archive_path: /blog.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  categories_path : /categories/
+  tags_path : /tags/
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

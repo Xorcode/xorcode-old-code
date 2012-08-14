@@ -100,6 +100,14 @@ task :preview do
   system "jekyll --auto --server"
 end # task :preview
 
+desc "Deploy to production environment"
+task :deploy do
+  require 'net/scp'
+  system "jekyll --no-auto"
+  username = ask("Username: ", nil) { |q| q.echo = true }
+  Net::SCP.upload!("xorcode.com", username, "./_site", "/home/xorcode.com/", :recursive => true)
+end # task :deploy
+
 # Public: Alias - Maintains backwards compatability for theme switching.
 task :switch_theme => "theme:switch"
 
@@ -197,11 +205,6 @@ namespace :theme do
     # Mirror each file into the framework making sure to prompt if already exists.
     packaged_theme_files.each do |filename|
       file_install_path = File.join(JB::Path.base, filename)
-#      if File.exist? file_install_path
-#        if ask("#{file_install_path} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
-#          next
-#        end
-#      end
       mkdir_p File.dirname(file_install_path)
       cp_r File.join(packaged_theme_path, filename), file_install_path
     end
