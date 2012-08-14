@@ -103,7 +103,7 @@ end # task :preview
 desc "Deploy to production environment"
 task :deploy do
   require 'net/scp'
-  system "jekyll --no-auto"
+  system "jekyll --safe --no-auto --no-future"
   username = ask("Username: ", nil) { |q| q.echo = true }
   Net::SCP.upload!("xorcode.com", username, "./_site", "/home/xorcode.com/", :recursive => true)
 end # task :deploy
