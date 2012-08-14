@@ -1,0 +1,35 @@
+---
+layout: home
+title: Xorcode
+---
+{% include JB/setup %}
+
+<div class="row-fluid">
+  <div class="span12">
+    <div class="hero-unit">
+      <h1>You started using tools 800,000 years ago</h1>
+      <h2>Welcome to the evolution of your toolbox</h2>
+      <p>Much as our early ancestors used tools to bag their prey; we help you bag customers, and keep them. Xorcode delivers scalable web solutions such as integrated billing systems, content management systems, development tools, as well as plugins and complete customizations for WordPress, Drupal, and other CMS software.</p>
+      <p><a class="btn btn-primary btn-large" href="about.html">Learn more &raquo;</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="row-fluid posts">
+  {% for post in site.posts limit:2 offset:0 %}
+  <div class="span4">
+    <h2><a href="{{  BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.categories }}</small></h2>
+    <p>{{ post.date | date:"%b %d, %Y" }}</p>
+    <p>{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | truncatewords:40 }}{% endif %}</p>
+  <p><a class="btn btn-js" href="{{  BASE_PATH }}{{ post.url }}">Read More</a></p>
+  </div>
+  {% endfor %}
+  <div class="span4">
+    <h2>Recent Articles</h2>
+    <ul class="nav nav-pills nav-stacked">
+    {% for post in site.posts limit:10 offset:2 %}
+      <li><span><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
