@@ -103,7 +103,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-16963170-1'
+      tracking_id : 'UA-16963170-1'
 
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
@@ -123,6 +123,10 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+
+bitly:
+  username: xorcode
+  api_key: R_b0b9b280be9a10ca4165d7c47574440d
 
 editor: gedit
 
