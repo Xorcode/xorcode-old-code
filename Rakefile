@@ -10,7 +10,8 @@ CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
   'post_ext' => "md",
-  'theme_package_version' => "0.1.0"
+  'theme_package_version' => "0.1.0",
+  'editor' => "gedit"
 }
 
 # Path configuration helper
@@ -68,6 +69,7 @@ task :post do
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
+  system "#{CONFIG['editor']} #{filename} &"
 end # task :post
 
 # Usage: rake page name="about.html"
@@ -93,6 +95,7 @@ task :page do
     post.puts "---"
     post.puts "{% include JB/setup %}"
   end
+  system "#{CONFIG['editor']} #{filename} &"
 end # task :page
 
 desc "Launch preview environment"
@@ -104,10 +107,9 @@ desc "Deploy to production environment"
 task :deploy do
   require 'net/scp'
   system "rm -Rf ./_site"
-  system "jekyll --no-auto --no-future"
+  system "jekyll --production --no-auto --no-future"
   username = ask("Username: ", nil) { |q| q.echo = true }
-  system "rsync --stats --compress --recursive --times --links --delete --force ./_site/ #{username}@xorcode.com:/home/xorcode.com/_site/"
-  #Net::SCP.upload!("xorcode.com", username, "./_site", "/home/xorcode.com/", :recursive => true)
+  system "rsync --progress --stats --compress --recursive --times --links --delete --force ./_site/ #{username}@xorcode.com:/home/xorcode.com/_site/"
 end # task :deploy
 
 # Public: Alias - Maintains backwards compatability for theme switching.
