@@ -18,7 +18,7 @@ title: Xorcode
 <div class="row-fluid posts">
   {% for post in site.posts limit:2 offset:0 %}
   <div class="span4">
-    <h2><a href="{{  BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.categories }}</small></h2>
+    <h2><a href="{{  BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.categories[0] }}</small></h2>
     <p><small>{{ post.date | date:"%b %d, %Y" }} | <a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread"><span class="dsq-postid" rel="{% if post.wordpress_id %}{{ post.wordpress_id }} {{post.wordpress_url }}{% else %}{{ site.production_url }}{{ post.url }}{% endif %}">No Comments</span></a></small></p>
     <p>{% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | truncatewords:40 }}{% endif %}</p>
     <ul class="tag_box">

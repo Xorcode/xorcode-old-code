@@ -103,9 +103,11 @@ end # task :preview
 desc "Deploy to production environment"
 task :deploy do
   require 'net/scp'
-  system "jekyll --safe --no-auto --no-future"
+  system "rm -Rf ./_site"
+  system "jekyll --no-auto --no-future"
   username = ask("Username: ", nil) { |q| q.echo = true }
-  Net::SCP.upload!("xorcode.com", username, "./_site", "/home/xorcode.com/", :recursive => true)
+  system "rsync --stats --compress --recursive --times --links --delete --force ./_site/ #{username}@xorcode.com:/home/xorcode.com/_site/"
+  #Net::SCP.upload!("xorcode.com", username, "./_site", "/home/xorcode.com/", :recursive => true)
 end # task :deploy
 
 # Public: Alias - Maintains backwards compatability for theme switching.

@@ -23,8 +23,8 @@ tags:
 
 {% include JB/setup %}
 
-Cleaning your Twitter direct messages manually can be a hassle and consume a lot of your time. <a title="DM Cleaner" href="http://dm-cleaner.com/" target="_blank">DM Cleaner</a> can wipe your Direct Message inbox <strong>and</strong> Sent Messages in one fell swoop.
+Cleaning your Twitter direct messages manually can be a hassle and consume a lot of your time. [DM Cleaner](http://dm-cleaner.com/) can wipe your Direct Message inbox **and** Sent Messages in one fell swoop.
 
-<a id="more"></a><a id="more-141"></a>DM Cleaner indexes your direct messages and stores only the ID of the direct message. The indexed messages are stored in a queue and any subsequent messages you receive will not be affected. Once the the application processes your queue all queued messages are deleted from twitter.
+DM Cleaner indexes your direct messages and stores only the ID of the direct message. The indexed messages are stored in a queue and any subsequent messages you receive will not be affected. Once the the application processes your queue all queued messages are deleted from twitter.
 
-[button url="http://dm-cleaner.com/" target="_blank" label="Visit Site"]
+<a class="btn btn-large btn-primary" href="http://dm-cleaner.com/">Visit Site</a>
