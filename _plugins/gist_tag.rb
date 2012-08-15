@@ -27,3 +27,4 @@ MARKUP
 end
 
 Liquid::Template.register_tag('gist', Xorcode::Liquid::GistTag)
+
