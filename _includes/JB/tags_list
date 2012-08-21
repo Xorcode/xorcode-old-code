@@ -22,11 +22,11 @@ Usage:
 {% else %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}{{ tag | downcase }}/">{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}{{ tag | downcase }}/">{{ tag }} {% if include_counts %}<small>{{ site.tags[tag].size }}</small>{% endif %}</a></li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}{{ tag[0] | downcase }}/">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}{{ tag[0] | downcase }}/">{{ tag[0] }} {% if include_counts %}<small>{{ tag[1].size }}</small>{% endif %}</a></li>
     {% endfor %}
   {% endif %}
 {% endif %}
