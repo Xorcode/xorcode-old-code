@@ -65,9 +65,11 @@ task :post do
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
     post.puts "category: "
+    post.puts "excerpt: "
     post.puts "tags: []"
     post.puts "---"
     post.puts "{% include JB/setup %}"
+    post.puts ""
   end
   system "#{CONFIG['editor']} #{filename} &"
 end # task :post
