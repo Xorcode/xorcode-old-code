@@ -22,6 +22,13 @@ Once you have installed the gem simply put the below file in your `_plugins` fol
 
 {% gist 3361948/bitly_filter.rb %}
 
+Update your configuration file with the following values:
+{% highlight yaml %}
+bitly:
+  username: YOUR_BITLY_USERNAME
+  api_key: YOUR_BITLY_KEY
+{% endhighlight %}
+
 Then you can use tags like this in your content:
 
 {% gist 3361948/sample_tag %}
