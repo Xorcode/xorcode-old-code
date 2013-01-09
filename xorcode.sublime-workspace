@@ -1,0 +1,245 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"eff",
+				"effectsDialog"
+			],
+			[
+				"disable",
+				"disableBoxControls"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"package contro",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/torgny/Documents/Projects/Xorcode.com/jekyll-bootstrap/Rakefile",
+		"/home/torgny/Documents/Projects/Xorcode.com/jekyll-bootstrap/_config.yml",
+		"/home/torgny/Documents/Projects/Xorcode.com/jekyll-bootstrap/changelog.md",
+		"/home/torgny/Documents/Projects/Xorcode.com/jekyll-bootstrap/contact.md",
+		"/home/torgny/git/framous-upload/config/server.js",
+		"/home/torgny/git/framous-upload/index.php",
+		"/home/torgny/git/framous-upload/Bootstrap.php",
+		"/home/torgny/git/framous3/sftp-config.json",
+		"/home/torgny/git/framous3/application/configs/application.xml",
+		"/home/torgny/git/framous3/application/configs/database.xml",
+		"/home/torgny/git/framous3/library/Beanstalk/Application/Resource/View.php",
+		"/home/torgny/git/framous3/framous.sublime-project",
+		"/Users/torgny/git/framous/public/assets/js/jquery.framous.js",
+		"/Users/torgny/git/beanstalk-shellscripts/deployment/setup-git.py",
+		"/Users/torgny/git/framous/public/assets/css/app.css",
+		"/Users/torgny/git/framous/sftp-config.json",
+		"/Users/torgny/git/framous/application/modules/admin/controllers/UserController.php",
+		"/Users/torgny/git/framous/application/modules/admin/views/scripts/user/view.phtml",
+		"/Users/torgny/git/framous/application/modules/admin/views/scripts/print-batch/view.phtml",
+		"/Users/torgny/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/torgny/git/framous/public/assets/css/jquery-ui-admin.css",
+		"/Users/torgny/git/framous/application/modules/admin/views/scripts/index/index.phtml",
+		"/Users/torgny/git/framous/application/modules/admin/controllers/IndexController.php",
+		"/Users/torgny/git/framous/application/modules/admin/views/scripts/order/view.phtml",
+		"/Users/torgny/git/framous/public/assets/css/admin.css",
+		"/Users/torgny/git/framous/library/Beanstalk/Application/Resource/View.php",
+		"/Users/torgny/git/framous/application/layouts/scripts/admin_header.phtml",
+		"/Users/torgny/git/framous/public/assets/js/admin.js",
+		"/Users/torgny/git/framous/framous.sublime-workspace",
+		"/Users/torgny/git/framous/framous.sublime-project",
+		"/Users/torgny/git/framous/.gitignore",
+		"/Users/torgny/git/framous/application/layouts/scripts/app-legacy_header.phtml",
+		"/Users/torgny/git/framous/application/layouts/scripts/app-legacy_scripts.phtml",
+		"/Users/torgny/git/framous/application/layouts/scripts/app-legacy.phtml",
+		"/Users/torgny/git/framous/public/assets/js/app-legacy.js",
+		"/Users/torgny/git/framous/application/layouts/scripts/app-legacy_footer.phtml",
+		"/Users/torgny/git/framous/public/assets/css/app-legacy.css",
+		"/Users/torgny/git/framous/application/modules/default/views/scripts/account/orders.phtml",
+		"/Users/torgny/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/torgny/git/framous/application/layouts/scripts/admin.phtml",
+		"/Users/torgny/git/framous/application/modules/default/controllers/DesignController.php",
+		"/Users/torgny/git/framous/application/modules/default/controllers/AccountController.php",
+		"/Users/torgny/git/framous/application/modules/default/views/scripts/account/index.phtml",
+		"/Users/torgny/git/framous/application/modules/default/views/scripts/design/index.phtml",
+		"/Users/torgny/git/framous/library/Packer/Javascript.php",
+		"/Users/torgny/git/framous/scripts/deployment/git/s3-push.php",
+		"/Users/torgny/git/framous/scripts/deployment/git/functions.php",
+		"/Users/torgny/git/framous/application/configs/application.xml",
+		"/Users/torgny/git/framous/library/Beanstalk/Application/Resource/Log.php",
+		"/Users/torgny/git/botstack/settings.js",
+		"/Users/torgny/git/botstack/server.js",
+		"/Users/torgny/git/botstack/cron/command_queue.js",
+		"/Users/torgny/git/botstack/config/server.js",
+		"/Users/torgny/git/botstack/package.json",
+		"/Users/torgny/git/botstack/lib/twitter.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"saveSession:",
+			"$me.session",
+			"loadCart",
+			"saveSession:",
+			"center_x",
+			"saveSession:",
+			"console.log",
+			"rotate",
+			"$me.session",
+			"cdn",
+			"debug",
+			"$me.selectedBackgroundColor",
+			"loadPhoto",
+			"$modal",
+			"modal",
+			"boxhandle",
+			"images/",
+			"rotate",
+			"headline",
+			"tile.",
+			"re-order",
+			"addMethod",
+			"\n    // Spacing between the gutter and the text\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$me.photoCdn",
+			"this",
+			"../img/legacy/ui-admin/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/torgny/git/framous/framous.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true
+}
