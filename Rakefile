@@ -11,7 +11,7 @@ CONFIG = {
   'posts' => File.join(SOURCE, "_posts"),
   'post_ext' => "md",
   'theme_package_version' => "0.1.0",
-  'editor' => "gedit"
+  'editor' => "sublime_text"
 }
 
 # Path configuration helper
